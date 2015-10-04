@@ -7,10 +7,14 @@
 </head>
 <body>
 
+<div class="container">
+  <h1>A Test of Liberty</h1>
   <p>Please click one of the three buttons below:</p>
-  <button id="button1">button 1</button>
-  <button id="button2">button 2</button>
-  <button id="button3">button 3</button>
+  <div class="button-group">
+    <button id="button1">button 1</button>
+    <button id="button2">button 2</button>
+    <button id="button3">button 3</button>
+  </div>
 
   <div id="modal1">
     <p>You've selected button 1. Why did you do this?</p>
@@ -19,7 +23,7 @@
       <input type="radio" id="two" name="choice" value="events">I was compelled by previous events</input><br>
       <input type="radio" id="three" name="choice" value="free">I made a free choice</input>
     </form>
-    <button onclick="response()">submit</button>
+    <button class="submit-button" onclick="response()">submit</button>
   </div>
 
   <div id="modal2">
@@ -30,6 +34,9 @@
     <p>You've selected button 3. Why did you do this?</p>
   </div>
 
+
+
+</div>
 
   <script>
     function reveal1(){

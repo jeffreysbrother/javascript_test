@@ -18,9 +18,29 @@ body {
   background-color: #57CC66;
 }
 
-#button1, #button2, #button3 {
+#button1, #button2, #button3, .submit-button {
   border: 1px solid gray;
   padding: 7px 13px;
   font-weight: bold;
   border-radius: 2px;
 }
+
+.submit-button {
+  background-color: gray;
+  color: white;
+  margin-top: 10px;
+}
+
+/*.container {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+h1, p {
+  text-align: center;
+}
+
+.button-group {
+  max-width: 100%;
+  margin: 0 auto;
+}*/
