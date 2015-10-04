@@ -1,11 +1,20 @@
-function reveal1(){
+function reveal1() {
   document.getElementById('modal1').style.display = 'block';
+  document.getElementById("button2").disabled = true;
+  document.getElementById("button3").disabled = true;
 }
-function reveal2(){
+function reveal2() {
   document.getElementById('modal2').style.display = 'block';
+  document.getElementById("button1").disabled = true;
+  document.getElementById("button3").disabled = true;
 }
-function reveal3(){
+function reveal3() {
   document.getElementById('modal3').style.display = 'block';
+  document.getElementById("button1").disabled = true;
+  document.getElementById("button2").disabled = true;
+}
+function refresh() {
+  location.reload();
 }
 
 // function response(){
