@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <p>Please click one of the three buttons below:</p>
+  <button id="button1">click</button>
+  <button id="button2">click</button>
+  <button id="button3">click</button>
+
+  <div id="modal1">
+    <p>You've selected button 1. Why did you do this?</p>
+    <form action="">
+      <input type="radio" id="one" name="choice" value="practical">I was compelled by practical reasons</input><br>
+      <input type="radio" id="two" name="choice" value="events">I was compelled by previous events</input><br>
+      <input type="radio" id="three" name="choice" value="free">I made a free choice</input>
+    </form>
+    <button onclick="response()">submit</button>
+  </div>
+
+  <div id="modal2">
+    <p>You've selected button 2. Why did you do this?</p>
+  </div>
+
+  <div id="modal3">
+    <p>You've selected button 3. Why did you do this?</p>
+  </div>
+
+
+  <script>
+    function reveal1(){
+      document.getElementById('modal1').style.display = 'block';
+    }
+    function reveal2(){
+      document.getElementById('modal2').style.display = 'block';
+    }
+    function reveal3(){
+      document.getElementById('modal3').style.display = 'block';
+    }
+
+    // function response(){
+    //   var x = document.getElementById("one").value;
+    //   var y = document.getElementById("two").value;
+    //   var z = document.getElementById("three").value;
+    //
+    //   if (x === )
+    // }
+
+    document.getElementById("button1").addEventListener("click", reveal1);
+    document.getElementById("button2").addEventListener("click", reveal2);
+    document.getElementById("button3").addEventListener("click", reveal3);
+
+
+  </script>
+</body>
+</html>
