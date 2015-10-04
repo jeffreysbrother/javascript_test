@@ -1,3 +1,21 @@
 #modal1, #modal2, #modal3 {
   display: none;
 }
+
+#button1 {
+  background-color: red;
+}
+
+#button2 {
+  background-color: orange;
+}
+
+#button3 {
+  background-color: yellow;
+}
+
+#button1, #button2, #button3 {
+  border: none;
+  padding: 7px;
+  font-weight: bold;
+}
