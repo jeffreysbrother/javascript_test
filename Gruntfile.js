@@ -15,9 +15,6 @@ module.exports = function(grunt) {
     },
     //CSSMIN
     cssmin: {
-      options: {
-        keepSpecialComments: 0
-      },
       site: {
           src: ['css/style.css'],
           dest: 'css/style.min.css'
