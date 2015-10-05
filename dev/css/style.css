@@ -6,7 +6,7 @@ h1 {
   display: inline;
 }
 
-#modal1, #modal2, #modal3 {
+#modal1, #modal2, #modal3, #modal4, #modal5, #modal6 {
   display: none;
   border: 2px solid gray;
   margin-top: 13px;
