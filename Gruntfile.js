@@ -9,15 +9,19 @@ module.exports = function(grunt) {
         banner: '/*! <%= pkg.name %> <%= grunt.template.today("yyyy-mm-dd") %> */\n'
       },
       build: {
-        src: 'js/script.js',
-        dest: 'script.min.js'
+        src: 'dev/js/script.js',
+        dest: 'dist/js/script.min.js'
       }
     },
     //CSSMIN
     cssmin: {
       site: {
-          src: ['css/style.css'],
-          dest: 'css/style.min.css'
+          src: ['dev/css/style.css'],
+          dest: 'dist/css/style.min.css'
+      },
+      site: {
+          src: ['dev/index.html'],
+          dest: 'dist/index.min.html'
       }
     }
 
