@@ -18,10 +18,6 @@ module.exports = function(grunt) {
       site: {
           src: ['dev/css/style.css'],
           dest: 'dist/css/style.min.css'
-      },
-      site: {
-          src: ['dev/index.html'],
-          dest: 'dist/index.min.html'
       }
     }
 
