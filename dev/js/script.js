@@ -1,3 +1,8 @@
+//adding event listeners to each button
+document.getElementById("button1").addEventListener("click", reveal1);
+document.getElementById("button2").addEventListener("click", reveal2);
+document.getElementById("button3").addEventListener("click", reveal3);
+
 //three functions for each of the initial selections
 function reveal1() {
   document.getElementById('modal1').style.display = 'block';
@@ -32,7 +37,3 @@ function response() {
     document.getElementById('modal6').style.display = 'block';
   }
 }
-
-document.getElementById("button1").addEventListener("click", reveal1);
-document.getElementById("button2").addEventListener("click", reveal2);
-document.getElementById("button3").addEventListener("click", reveal3);
