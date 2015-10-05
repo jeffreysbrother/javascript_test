@@ -1,3 +1,4 @@
+//three functions for each of the initial selections
 function reveal1() {
   document.getElementById('modal1').style.display = 'block';
   document.getElementById("button2").disabled = true;
@@ -16,10 +17,12 @@ function reveal3() {
   document.getElementById("button2").disabled = true;
 }
 
+//function for Restart button
 function refresh() {
   location.reload();
 }
 
+//conditional based on whether a radio button is "checked"
 function response() {
   if(document.getElementById('one').checked === true) {
     document.getElementById('modal4').style.display = 'block';
