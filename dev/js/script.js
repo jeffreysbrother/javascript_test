@@ -24,11 +24,11 @@ function refresh() {
 
 //conditional based on whether a radio button is "checked"
 function response() {
-  if(document.getElementById('one').checked === true) {
+  if(document.getElementById('one').checked === true || document.getElementById('one-1').checked === true || document.getElementById('one-one').checked === true) {
     document.getElementById('modal4').style.display = 'block';
-  } else if(document.getElementById('two').checked === true) {
+  } else if(document.getElementById('two').checked === true || document.getElementById('two-2').checked === true || document.getElementById('two-two').checked === true) {
     document.getElementById('modal5').style.display = 'block';
-  } else if(document.getElementById('three').checked === true) {
+  } else if(document.getElementById('three').checked === true || document.getElementById('three-3').checked === true || document.getElementById('three-three').checked === true) {
     document.getElementById('modal6').style.display = 'block';
   }
 }
