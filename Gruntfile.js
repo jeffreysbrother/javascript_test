@@ -19,14 +19,18 @@ module.exports = function(grunt) {
           src: ['dev/css/style.css'],
           dest: 'dist/css/style.min.css'
       }
+    },
+    //JSHINT
+    jshint: {
+      all: ['Gruntfile.js', 'dev/js/*.js']
     }
-
   });
 
   //load the plugin that provides the 'uglify' task
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
+  grunt.loadNpmTasks('grunt-contrib-jshint');
 
   //default task(s)
-  grunt.registerTask('default', ['uglify', 'cssmin']);
+  grunt.registerTask('default', ['jshint', 'uglify', 'cssmin']);
 };
