@@ -34,9 +34,13 @@ function response() {
 }
 
 //second submit button functionality
-
 $('#submit-button-2').click(function(){
-  $('h2').slideDown("fast");
+  if (!$.trim($('textarea').val())) {
+    $('.error').show();
+  } else if ($('textarea').val()) {
+    $('.error').hide();
+    $('h2').show();
+  }
 });
 
 

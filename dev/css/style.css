@@ -79,3 +79,9 @@ h2 {
   font-weight: bold;
   color: red;
 }
+
+.error {
+  display: none;
+  color: green;
+  text-align: center;
+}
