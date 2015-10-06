@@ -69,3 +69,7 @@ h1 {
 .refresh-button:active {
   color: white;
 }
+
+textarea {
+  width: 99%;
+}
