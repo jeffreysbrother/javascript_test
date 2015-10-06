@@ -6,6 +6,10 @@ h1 {
   display: inline;
 }
 
+.spacer {
+  height: 15px;
+}
+
 #modal1, #modal2, #modal3 {
   display: none;
   border: 2px solid gray;
