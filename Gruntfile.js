@@ -9,28 +9,31 @@ module.exports = function(grunt) {
         banner: '/*! <%= pkg.name %> <%= grunt.template.today("yyyy-mm-dd") %> */\n'
       },
       build: {
-        src: 'dev/js/script.js',
-        dest: 'dist/js/script.min.js'
+        src: 'js/script.js',
+        dest: 'js/script.min.js'
+      },
+      build: {
+        src: 'js/jquery.js',
+        dest: 'js/jquery.min.js'
       }
     },
     //CSSMIN
     cssmin: {
       site: {
-          src: ['dev/css/style.css'],
-          dest: 'dist/css/style.min.css'
+          src: ['css/style.css'],
+          dest: 'css/style.min.css'
       }
     },
     //JSHINT
     jshint: {
-      all: ['Gruntfile.js', 'dev/js/*.js']
+      all: ['Gruntfile.js', 'js/*.js']
     }
   });
 
   //load the plugin that provides the 'uglify' task
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
-  grunt.loadNpmTasks('grunt-contrib-jshint');
 
   //default task(s)
-  grunt.registerTask('default', ['jshint', 'uglify', 'cssmin']);
+  grunt.registerTask('default', ['uglify', 'cssmin']);
 };
