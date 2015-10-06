@@ -6,12 +6,20 @@ h1 {
   display: inline;
 }
 
-#modal1, #modal2, #modal3, #modal4, #modal5, #modal6 {
+#modal1, #modal2, #modal3 {
   display: none;
   border: 2px solid gray;
   margin-top: 13px;
   padding: 10px;
   padding-top: 0;
+  border-radius: 4px;
+}
+
+#modal4, #modal5, #modal6 {
+  display: none;
+  border: 2px solid gray;
+  margin-top: 13px;
+  padding: 10px;
   border-radius: 4px;
 }
 

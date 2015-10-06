@@ -32,3 +32,9 @@ function response() {
     $('.submit-button').prop('disabled', true);
   }
 }
+
+
+/*********
+replaced the css("display", "block") function from the radio button section
+...and the show() function from the initial section with slideDown()
+*********/
