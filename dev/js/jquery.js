@@ -35,11 +35,12 @@ function response() {
 
 //second submit button functionality
 $('#submit-button-2').click(function(){
+  //the below expression will check if the textarea is blank or filled only with blank spaces
   if (!$.trim($('textarea').val())) {
     $('.error').show();
   } else if ($('textarea').val()) {
     $('.error').hide();
-    $('h2').show();
+    $('#sucks').show();
   }
 });
 
