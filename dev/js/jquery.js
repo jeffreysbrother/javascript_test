@@ -23,9 +23,12 @@ $('#button3').click(function(){
 function response() {
   if($('#one').is(':checked') || $('#one-1').is(':checked') || $('#one-one').is(':checked')) {
     $('#modal4').css("display", "block");
+    $('.submit-button').prop('disabled', true);
   } else if($('#two').is(':checked') || $('#two-2').is(':checked') || $('#two-two').is(':checked')) {
     $('#modal5').css("display", "block");
+    $('.submit-button').prop('disabled', true);
   } else if($('#three').is(':checked') || $('#three-3').is(':checked') || $('#three-three').is(':checked')) {
     $('#modal6').css("display", "block");
+    $('.submit-button').prop('disabled', true);
   }
 }
