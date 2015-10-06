@@ -11,6 +11,7 @@ h1 {
   border: 2px solid gray;
   margin-top: 13px;
   padding: 10px;
+  padding-top: 0;
   border-radius: 4px;
 }
 
