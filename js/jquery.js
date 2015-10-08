@@ -57,9 +57,6 @@ $('#submit-button-3').click(function(){
   }
 });
 
-// $('textarea').autoResize();
-
-
 /*********
 replaced the css("display", "block") function from the radio button section
 ...and the show() function from the initial section with slideDown()
