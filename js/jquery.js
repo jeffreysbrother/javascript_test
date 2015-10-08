@@ -57,6 +57,8 @@ $('#submit-button-3').click(function(){
   }
 });
 
+// $('textarea').autoResize();
+
 
 /*********
 replaced the css("display", "block") function from the radio button section

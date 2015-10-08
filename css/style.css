@@ -63,11 +63,12 @@ h1 {
   color: white;
 }
 
-/*this allows the textarea's width from being resized, but it allows for resizing along the y-axis*/
 textarea {
   width: 99%;
-  max-width: 99%;
-  min-width: 99%;
+  /*only resizing along y-axis*/
+  resize: vertical;
+  /*hides default scroll bars in IE*/
+  overflow: auto;
 }
 
 #sucks {
