@@ -32,7 +32,7 @@ h1 {
   background-color: #57CC66;
 }
 
-#button1, #button2, #button3, .submit-button, #submit-button-2, #submit-button-3 {
+#button1, #button2, #button3, #submit-button, #submit-button-2, #submit-button-3 {
   border: 1px solid gray;
   padding: 7px 18px;
   font-weight: bold;
@@ -40,7 +40,7 @@ h1 {
   margin-right: 13px;
 }
 
-.submit-button, #submit-button-2, #submit-button-3 {
+#submit-button, #submit-button-2, #submit-button-3 {
   background-color: gray;
   color: white;
   margin-top: 10px;
@@ -63,6 +63,7 @@ h1 {
   color: white;
 }
 
+/*this allows the textarea's width from being resized, but it allows for resizing along the y-axis*/
 textarea {
   width: 99%;
   max-width: 99%;
