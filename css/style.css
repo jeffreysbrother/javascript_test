@@ -129,4 +129,13 @@ MEDIA QUERIES
     margin-bottom: 11px;
   }
 
+  #submit-button-2, #submit-button-3 {
+    display: block;
+    float: none;
+  }
+
+  .error {
+    text-align: center;
+  }
+
 }
