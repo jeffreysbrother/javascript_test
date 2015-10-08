@@ -65,6 +65,7 @@ h1 {
 
 textarea {
   width: 99%;
+  max-width: 491px;
 }
 
 #sucks {
