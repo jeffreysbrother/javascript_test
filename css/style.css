@@ -10,22 +10,14 @@ h1 {
   height: 15px;
 }
 
-#modal1, #modal2, #modal3 {
+#modal1, #modal2, #modal3, #modal4, #modal5, #modal6 {
   display: none;
   border: 2px solid gray;
   margin-top: 13px;
   padding: 10px;
+  border-radius: 4px;
   padding-top: 0;
-  border-radius: 4px;
   padding-bottom: 12px;
-}
-
-#modal4, #modal5, #modal6 {
-  display: none;
-  border: 2px solid gray;
-  margin-top: 13px;
-  padding: 10px;
-  border-radius: 4px;
 }
 
 #button1 {
