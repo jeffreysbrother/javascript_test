@@ -107,8 +107,22 @@ h2 {
     display: block;
     margin: 0 auto;
   }
+
   h1 {
     display: block;
     text-align: center;
   }
+
+  #intro {
+    text-align: center;
+  }
+
+  #button1, #button2, #button3 {
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+    padding: 11px;
+    margin-bottom: 11px;
+  }
+
 }
