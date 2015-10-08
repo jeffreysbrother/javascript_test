@@ -101,3 +101,14 @@ h2 {
   display: table;
   clear: both;
 }
+
+@media (max-width: 464px) {
+  .refresh-button {
+    display: block;
+    margin: 0 auto;
+  }
+  h1 {
+    display: block;
+    text-align: center;
+  }
+}
