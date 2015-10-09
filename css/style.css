@@ -67,6 +67,9 @@ h1 {
 .refresh-button:active {
   color: white;
 }
+.refresh-button:hover {
+  font-weight: bold;
+}
 
 textarea {
   width: 99%;
