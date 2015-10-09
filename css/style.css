@@ -96,7 +96,6 @@ h2 {
 #error2, #error3 {
   display: none;
   color: red;
-  /*clear: right;*/
 }
 
 /*clearfix: this is to be applied to the parent element*/
