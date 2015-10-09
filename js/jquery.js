@@ -46,9 +46,12 @@ function response() {
 $('#submit-button-2').click(function(){
   //the below expression will check if the textarea is blank or filled only with blank spaces
   if (!$.trim($('.textarea1').val())) {
-    $('.error').show();
+    $('#error2').show();
+    $('html, body').animate({
+      scrollTop: $('#error2').offset().top
+    }, 1000);
   } else if ($('.textarea1').val()) {
-    $('.error').hide();
+    $('#error2').hide();
     $('#sucks').show();
     $('#submit-button-2').prop('disabled', true);
     $('html, body').animate({
@@ -61,9 +64,12 @@ $('#submit-button-2').click(function(){
 $('#submit-button-3').click(function(){
   //the below expression will check if the textarea is blank or filled only with blank spaces
   if (!$.trim($('.textarea2').val())) {
-    $('.error').show();
+    $('#error3').show();
+    $('html, body').animate({
+      scrollTop: $('#error3').offset().top
+    }, 1000);
   } else if ($('.textarea2').val()) {
-    $('.error').hide();
+    $('#error3').hide();
     $('#sucks').show();
     $('#submit-button-3').prop('disabled', true);
     $('html, body').animate({

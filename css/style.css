@@ -89,7 +89,7 @@ h2 {
   margin: 0;
 }
 
-.error {
+#error2, #error3 {
   display: none;
   color: red;
   /*clear: right;*/
@@ -134,7 +134,7 @@ MEDIA QUERIES
     float: none;
   }
 
-  .error {
+  #error2, #error3 {
     text-align: center;
   }
 
