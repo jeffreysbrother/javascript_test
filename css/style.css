@@ -38,6 +38,7 @@ h1 {
   font-weight: bold;
   border-radius: 2px;
   margin-right: 13px;
+  font-size: .8em;
 }
 
 .submit-button, #submit-button-2, #submit-button-3 {
