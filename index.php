@@ -54,7 +54,7 @@ $characters = "250 characters max.";
       <input type="radio" id="two-two" name="choice" value="events">I was compelled by previous events</input><br>
       <input type="radio" id="three-three" name="choice" value="free">I made a free choice</input>
     </form>
-    <button class="submit-button" onclick="response()">submit</button>
+    <?php echo $submitButton; ?>
   </div>
 
   <div id="modal4" class="clearfix">
