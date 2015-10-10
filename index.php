@@ -1,3 +1,8 @@
+<?php
+$submitButton = "<button class=\"submit-button\" onclick=\"response()\">submit</button>";
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -28,7 +33,7 @@
       <input type="radio" id="two" name="choice" value="events">I was compelled by previous events</input><br>
       <input type="radio" id="three" name="choice" value="free">I made a free choice</input>
     </form>
-    <button class="submit-button" onclick="response()">submit</button>
+    <?php echo submitButton; ?>
   </div>
 
   <div id="modal2">
@@ -38,7 +43,7 @@
       <input type="radio" id="two-2" name="choice" value="events">I was compelled by previous events</input><br>
       <input type="radio" id="three-3" name="choice" value="free">I made a free choice</input>
     </form>
-    <button class="submit-button" onclick="response()">submit</button>
+    <?php echo submitButton; ?>
   </div>
 
   <div id="modal3">
