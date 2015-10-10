@@ -1,5 +1,6 @@
 <?php
 $submitButton = "<button class=\"submit-button\" onclick=\"response()\">submit</button>";
+$characters = "250 characters max.";
 
 ?>
 
@@ -60,7 +61,7 @@ $submitButton = "<button class=\"submit-button\" onclick=\"response()\">submit</
     <p>So you must believe that practical reasons (considerations having to do with the rational attainment of a future goal) have the ability to compel you to act. But why should we think that perceiving one line of action to be superior to another <em>necessitates</em> the corresponding action? And why not just classify these "reasons" for action as being <em>explanations</em> rather than causal elements?</p>
     <p>If it is suggested that an individual can choose no color besides his favorite color unless he experiences another inclination strong enough to override the original, then it looks like we're left with a mere re-wording of the thesis of determinism. What we need, of course, is <em>justification</em> of this outlook.</p>
     <p>In a few sentences, please attempt to justify the thesis of determinism:</p>
-    <textarea class="textarea2" rows="8" placeholder="250 characters max." autofocus></textarea>
+    <textarea class="textarea2" rows="8" placeholder="<?php echo $characters; ?>" autofocus></textarea>
     <button id="submit-button-3">submit</button>
     <p id="error3">Please provide an explanation before submitting!!</p>
   </div>
@@ -68,7 +69,7 @@ $submitButton = "<button class=\"submit-button\" onclick=\"response()\">submit</
   <div id="modal5" class="clearfix">
     <p>So you must believe that organisms (complex creatures with nervous systems that harbor the capacity to perceive, imagine, abstract, and predict) must follow the strict, deterministic rules governing decaying vegetable matter, falling objects, and computer programs.</p>
     <p>Please explain yourself below:</p>
-    <textarea class="textarea1" rows="8" placeholder="Enter a short justification of this position" autofocus></textarea>
+    <textarea class="textarea1" rows="8" placeholder="<?php echo $characters; ?>" autofocus></textarea>
     <button id="submit-button-2">submit</button>
     <p id="error2">Please provide an explanation before submitting!!</p>
   </div>
