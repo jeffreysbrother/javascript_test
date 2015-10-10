@@ -33,7 +33,7 @@ $submitButton = "<button class=\"submit-button\" onclick=\"response()\">submit</
       <input type="radio" id="two" name="choice" value="events">I was compelled by previous events</input><br>
       <input type="radio" id="three" name="choice" value="free">I made a free choice</input>
     </form>
-    <?php echo submitButton; ?>
+    <?php echo $submitButton; ?>
   </div>
 
   <div id="modal2">
@@ -43,7 +43,7 @@ $submitButton = "<button class=\"submit-button\" onclick=\"response()\">submit</
       <input type="radio" id="two-2" name="choice" value="events">I was compelled by previous events</input><br>
       <input type="radio" id="three-3" name="choice" value="free">I made a free choice</input>
     </form>
-    <?php echo submitButton; ?>
+    <?php echo $submitButton; ?>
   </div>
 
   <div id="modal3">
