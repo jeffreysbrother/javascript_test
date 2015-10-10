@@ -1,3 +1,5 @@
+"use strict";
+
 //function for Restart button
 function refresh() {
   location.reload();
