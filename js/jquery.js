@@ -88,29 +88,29 @@ $('#submit-button-3').click(function(){
 
 //function to play optimistic sound
 function optimistic() {
-var audioElement = document.createElement('audio');
-    audioElement.setAttribute('src', 'audio/bleeping.wav');
-    audioElement.setAttribute('autoplay', 'autoplay');
-    //audioElement.load()
-    $.get();
+  var audioElement = document.createElement('audio');
+      audioElement.setAttribute('src', 'audio/bleeping.wav');
+      audioElement.setAttribute('autoplay', 'autoplay');
+      //audioElement.load()
+      $.get();
 
-    audioElement.addEventListener("load", function() {
-        audioElement.play();
-    }, true);
-  }
+      audioElement.addEventListener("load", function() {
+          audioElement.play();
+      }, true);
+}
 
 //function to play FAIL sound
 function failure() {
-var audioElement = document.createElement('audio');
-    audioElement.setAttribute('src', 'audio/fail_sound.wav');
-    audioElement.setAttribute('autoplay', 'autoplay');
-    //audioElement.load()
-    $.get();
+  var audioElement = document.createElement('audio');
+      audioElement.setAttribute('src', 'audio/fail_sound.wav');
+      audioElement.setAttribute('autoplay', 'autoplay');
+      //audioElement.load()
+      $.get();
 
-    audioElement.addEventListener("load", function() {
-        audioElement.play();
-    }, true);
-  }
+      audioElement.addEventListener("load", function() {
+          audioElement.play();
+      }, true);
+}
 /*********
 replaced the css("display", "block") function from the radio button section
 ...and the show() function from the initial section with slideDown()
