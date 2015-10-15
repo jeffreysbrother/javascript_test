@@ -1,7 +1,6 @@
 <?php
 $submitButton = "<button class=\"submit-button\" onclick=\"response()\">submit</button>";
 $characters = "250 characters max.";
-
 ?>
 
 <!DOCTYPE html>
