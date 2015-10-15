@@ -23,13 +23,21 @@ h1 {
 #button1 {
   background-color: #FFA086;
 }
-
 #button2 {
   background-color: #C6FFDD;
 }
-
 #button3 {
   background-color: #57CC66;
+}
+
+#button1:hover {
+  background-color: #EE8877;
+}
+#button2:hover {
+  background-color: #BCEECC;
+}
+#button3:hover {
+  background-color: #35BB44;
 }
 
 #button1, #button2, #button3, .submit-button, #submit-button-2, #submit-button-3 {
