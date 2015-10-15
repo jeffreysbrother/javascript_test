@@ -41,6 +41,16 @@ function response() {
     $('html, body').animate({
       scrollTop: $("#modal6").offset().top
     }, 1000);
+    //play audio
+    var audioElement = document.createElement('audio');
+        audioElement.setAttribute('src', 'audio/bleeping.wav');
+        audioElement.setAttribute('autoplay', 'autoplay');
+        //audioElement.load()
+        $.get();
+
+        audioElement.addEventListener("load", function() {
+            audioElement.play();
+        }, true);
   }
 }
 
@@ -59,6 +69,16 @@ $('#submit-button-2').click(function(){
     $('html, body').animate({
       scrollTop: $("#sucks").offset().top
     }, 1000);
+    //play audio
+    var audioElement = document.createElement('audio');
+        audioElement.setAttribute('src', 'audio/fail_sound.wav');
+        audioElement.setAttribute('autoplay', 'autoplay');
+        //audioElement.load()
+        $.get();
+
+        audioElement.addEventListener("load", function() {
+            audioElement.play();
+        }, true);
   }
 });
 
@@ -77,6 +97,16 @@ $('#submit-button-3').click(function(){
     $('html, body').animate({
       scrollTop: $("#sucks").offset().top
     }, 1000);
+    //play audio
+    var audioElement = document.createElement('audio');
+        audioElement.setAttribute('src', 'audio/fail_sound.wav');
+        audioElement.setAttribute('autoplay', 'autoplay');
+        //audioElement.load()
+        $.get();
+
+        audioElement.addEventListener("load", function() {
+            audioElement.play();
+        }, true);
   }
 });
 
