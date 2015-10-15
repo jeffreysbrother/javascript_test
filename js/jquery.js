@@ -48,7 +48,7 @@ function response() {
 
 //previous events submit button functionality
 $('#submit-button-2').click(function(){
-  //the below expression will check if the textarea is blank or filled only with blank spaces
+  //the below expression will check if the textarea is blank or filled only with spaces
   if (!$.trim($('.textarea1').val())) {
     $('#error2').show();
     $('html, body').animate({
@@ -68,7 +68,7 @@ $('#submit-button-2').click(function(){
 
 //practical reasons submit button functionality
 $('#submit-button-3').click(function(){
-  //the below expression will check if the textarea is blank or filled only with blank spaces
+  //the below expression will check if the textarea is blank or filled only with spaces
   if (!$.trim($('.textarea2').val())) {
     $('#error3').show();
     $('html, body').animate({
