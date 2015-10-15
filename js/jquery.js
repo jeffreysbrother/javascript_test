@@ -5,6 +5,18 @@ function refresh() {
   location.reload();
 }
 
+//variables: two audio tracks
+var happy = 'bleeping.wav';
+var unhappy = 'fail_sound.wav';
+
+//function to play the audio tracks (parameter can be one of the variables above)
+function playTrack(track) {
+  var audioElement = document.createElement('audio');
+      audioElement.setAttribute('src', track);
+      audioElement.setAttribute('autoplay', 'autoplay');
+      audioElement.play();
+}
+
 //action for initial button click
 $('#button1').click(function(){
   $('#modal1').slideDown("slow");
@@ -37,7 +49,7 @@ function response() {
     }, 1000);
   } else if($('#three').is(':checked') || $('#three-3').is(':checked') || $('#three-three').is(':checked')) {
     //play audio
-    optimistic();
+    playTrack(happy);
     $('#modal6').slideDown("slow");
     $('.submit-button').prop('disabled', true);
     $('html, body').animate({
@@ -56,7 +68,7 @@ $('#submit-button-2').click(function(){
     }, 1000);
   } else if ($('.textarea1').val()) {
     //play audio
-    failure();
+    playTrack(unhappy);
     $('#error2').hide();
     $('#sucks').show();
     $('#submit-button-2').prop('disabled', true);
@@ -76,7 +88,7 @@ $('#submit-button-3').click(function(){
     }, 1000);
   } else if ($('.textarea2').val()) {
     //play audio
-    failure();
+    playTrack(unhappy);
     $('#error3').hide();
     $('#sucks').show();
     $('#submit-button-3').prop('disabled', true);
@@ -86,31 +98,6 @@ $('#submit-button-3').click(function(){
   }
 });
 
-//function to play optimistic sound
-function optimistic() {
-  var audioElement = document.createElement('audio');
-      audioElement.setAttribute('src', 'audio/bleeping.wav');
-      audioElement.setAttribute('autoplay', 'autoplay');
-      //audioElement.load()
-      $.get();
-
-      audioElement.addEventListener("load", function() {
-          audioElement.play();
-      }, true);
-}
-
-//function to play FAIL sound
-function failure() {
-  var audioElement = document.createElement('audio');
-      audioElement.setAttribute('src', 'audio/fail_sound.wav');
-      audioElement.setAttribute('autoplay', 'autoplay');
-      //audioElement.load()
-      $.get();
-
-      audioElement.addEventListener("load", function() {
-          audioElement.play();
-      }, true);
-}
 /*********
 replaced the css("display", "block") function from the radio button section
 ...and the show() function from the initial section with slideDown()
