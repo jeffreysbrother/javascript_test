@@ -36,11 +36,6 @@ function response() {
       scrollTop: $("#modal5").offset().top
     }, 1000);
   } else if($('#three').is(':checked') || $('#three-3').is(':checked') || $('#three-three').is(':checked')) {
-    $('#modal6').slideDown("slow");
-    $('.submit-button').prop('disabled', true);
-    $('html, body').animate({
-      scrollTop: $("#modal6").offset().top
-    }, 1000);
     //play audio
     var audioElement = document.createElement('audio');
         audioElement.setAttribute('src', 'audio/bleeping.wav');
@@ -51,6 +46,11 @@ function response() {
         audioElement.addEventListener("load", function() {
             audioElement.play();
         }, true);
+    $('#modal6').slideDown("slow");
+    $('.submit-button').prop('disabled', true);
+    $('html, body').animate({
+      scrollTop: $("#modal6").offset().top
+    }, 1000);
   }
 }
 
@@ -63,12 +63,6 @@ $('#submit-button-2').click(function(){
       scrollTop: $('#error2').offset().top
     }, 1000);
   } else if ($('.textarea1').val()) {
-    $('#error2').hide();
-    $('#sucks').show();
-    $('#submit-button-2').prop('disabled', true);
-    $('html, body').animate({
-      scrollTop: $("#sucks").offset().top
-    }, 1000);
     //play audio
     var audioElement = document.createElement('audio');
         audioElement.setAttribute('src', 'audio/fail_sound.wav');
@@ -79,6 +73,12 @@ $('#submit-button-2').click(function(){
         audioElement.addEventListener("load", function() {
             audioElement.play();
         }, true);
+    $('#error2').hide();
+    $('#sucks').show();
+    $('#submit-button-2').prop('disabled', true);
+    $('html, body').animate({
+      scrollTop: $("#sucks").offset().top
+    }, 1000);
   }
 });
 
@@ -91,12 +91,6 @@ $('#submit-button-3').click(function(){
       scrollTop: $('#error3').offset().top
     }, 1000);
   } else if ($('.textarea2').val()) {
-    $('#error3').hide();
-    $('#sucks').show();
-    $('#submit-button-3').prop('disabled', true);
-    $('html, body').animate({
-      scrollTop: $("#sucks").offset().top
-    }, 1000);
     //play audio
     var audioElement = document.createElement('audio');
         audioElement.setAttribute('src', 'audio/fail_sound.wav');
@@ -107,6 +101,12 @@ $('#submit-button-3').click(function(){
         audioElement.addEventListener("load", function() {
             audioElement.play();
         }, true);
+    $('#error3').hide();
+    $('#sucks').show();
+    $('#submit-button-3').prop('disabled', true);
+    $('html, body').animate({
+      scrollTop: $("#sucks").offset().top
+    }, 1000);
   }
 });
 
